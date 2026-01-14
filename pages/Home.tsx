@@ -29,14 +29,14 @@ const Home: React.FC = () => {
               type="cab"
               title="Cab Services"
               description="High-end sedans and SUVs for city travel, events, and hourly bookings."
-              pricePerKm={12}
-              packagePrice="Starting at ₹1200"
+              pricePerKm={20}
+              packagePrice="Starting at ₹2500"
             />
             <ServiceCard
               type="taxi"
               title="Taxi Services"
               description="Fast, reliable taxi rides for immediate travel and outstation destinations."
-              pricePerKm={10}
+              pricePerKm={20}
               packagePrice="Starting at ₹2000"
             />
           </div>
