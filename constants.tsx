@@ -3,7 +3,7 @@ import React from 'react';
 import { Package } from './types';
 
 export const PHONE_NUMBER = "+918530286538";
-export const WHATSAPP_NUMBER = "8530286538"; // No '+' or '00'
+export const WHATSAPP_NUMBER = "8421206738"; // No '+' or '00'
 export const AGENCY_ADDRESS = "road, Old Market, Madgaon, Goa 403601";
 
 // export const CAB_PACKAGES: Package[] = [
