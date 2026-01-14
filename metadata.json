@@ -1,0 +1,7 @@
+{
+  "name": "SiyaCar - Cab & Taxi Services",
+  "description": "A premium travel agency website for cab and taxi services featuring real-time package booking, WhatsApp integration, and a sleek modern interface.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
