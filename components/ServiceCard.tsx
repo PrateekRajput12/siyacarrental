@@ -31,7 +31,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ type, title, pricePerKm, pack
         <div className="space-y-4 mb-8">
           <div className="flex items-center justify-between p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
             <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Price per KM</span>
-            <span className="text-lg font-bold text-slate-900 dark:text-white">${pricePerKm}</span>
+            <span className="text-lg font-bold text-slate-900 dark:text-white">₹{pricePerKm}</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-slate-50 dark:bg-slate-900/50 rounded-xl">
             <span className="text-sm font-medium text-slate-500 dark:text-slate-400">Base Fare</span>

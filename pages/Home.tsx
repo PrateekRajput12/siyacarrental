@@ -8,7 +8,7 @@ import ContactForm from '../components/ContactForm';
 
 const Home: React.FC = () => {
   // Public demonstration embed URL consistent with Contact page
-  const publicEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175436659793!2d-73.985428!3d40.748441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1625682000000!5m2!1sen!2sus`;
+  const publicEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492637.2072258353!2d73.34791598906253!3d15.282612199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb375b0c4e039%3A0x65de006bb06713d9!2sSiya%20Car%20Rental%20goa!5e0!3m2!1sen!2sin!4v1768377723052!5m2!1sen!2sin`;
 
   return (
     <div className="overflow-hidden">
@@ -30,14 +30,14 @@ const Home: React.FC = () => {
               title="Cab Services"
               description="High-end sedans and SUVs for city travel, events, and hourly bookings."
               pricePerKm={12}
-              packagePrice="Starting at ₹800"
+              packagePrice="Starting at ₹1200"
             />
             <ServiceCard
               type="taxi"
               title="Taxi Services"
               description="Fast, reliable taxi rides for immediate travel and outstation destinations."
               pricePerKm={10}
-              packagePrice="Starting at ₹500"
+              packagePrice="Starting at ₹2000"
             />
           </div>
         </div>

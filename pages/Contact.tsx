@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   }, []);
 
   // Public demonstration embed URL for a static location (Empire State Building as proxy)
-  const publicEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175436659793!2d-73.985428!3d40.748441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1625682000000!5m2!1sen!2sus`;
+  const publicEmbedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492637.2072258353!2d73.34791598906253!3d15.282612199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb375b0c4e039%3A0x65de006bb06713d9!2sSiya%20Car%20Rental%20goa!5e0!3m2!1sen!2sin!4v1768377723052!5m2!1sen!2sin`;
 
   return (
     <div className="pt-20">
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
       <section className="py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
+
             <div className="lg:col-span-1 space-y-8">
               <div className="bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-sm transition-all hover:shadow-md">
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Office Info</h3>

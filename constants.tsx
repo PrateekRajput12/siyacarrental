@@ -2,59 +2,103 @@
 import React from 'react';
 import { Package } from './types';
 
-export const PHONE_NUMBER = "+918421206738";
-export const WHATSAPP_NUMBER = "8421206738"; // No '+' or '00'
-export const AGENCY_ADDRESS = "123 Transit Ave, Suite 400, New York, NY 10001";
+export const PHONE_NUMBER = "+918530286538";
+export const WHATSAPP_NUMBER = "8530286538"; // No '+' or '00'
+export const AGENCY_ADDRESS = "road, Old Market, Madgaon, Goa 403601";
 
-export const CAB_PACKAGES: Package[] = [
-  {
-    id: 'cab-full-day',
-    type: 'cab',
-    title: 'Full Day City Tour',
-    description: 'Explore the city comfortably for up to 8 hours.',
-    pricePerKm: 12,
-    baseFare: 1500,
-    features: ['8 Hours / 80km', 'A/C Vehicle', 'Professional Guide (Optional)'],
-    image: 'https://picsum.photos/seed/cab1/800/600',
-    category: 'City Tour'
-  },
-  {
-    id: 'cab-airport',
-    type: 'cab',
-    title: 'Airport Transfer',
-    description: 'Punctual pickup and drop from the airport.',
-    pricePerKm: 15,
-    baseFare: 800,
-    features: ['Real-time tracking', 'Luggage assistance', 'Flight monitoring'],
-    image: 'https://picsum.photos/seed/cab2/800/600',
-    category: 'Transfer'
-  }
-];
+// export const CAB_PACKAGES: Package[] = [
+//   {
+//     id: 'creta-auto',
+//     type: 'cab',
+//     title: 'Creta (Automatic)',
+//     description: 'Self drive car rental',
+//     pricePerKm: 0,
+//     baseFare: 3000,
+//     features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+//     image: 'https://i.pinimg.com/736x/50/66/0e/50660e2e46c306296a78717fb7231934.jpg',
+//     category: 'Car Rental'
+//   },
+//   {
+//     id: 'creta-manual',
+//     type: 'cab',
+//     title: 'Creta (Manual)',
+//     description: 'Self drive car rental',
+//     pricePerKm: 0,
+//     baseFare: 2500,
+//     features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+//     image: 'https://i.pinimg.com/1200x/f3/45/d0/f345d0e0ee1dc77e7fb3eb9d367c9e77.jpg',
+//     category: 'Car Rental'
+//   },
+//   {
+//     id: 'baleno-manual',
+//     type: 'cab',
+//     title: 'Baleno (Manual)',
+//     description: 'Self drive car rental',
+//     pricePerKm: 0,
+//     baseFare: 1300,
+//     features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+//     image: 'https://i.pinimg.com/736x/a1/92/ae/a192ae47b0a1cbcc7974809a7d737918.jpg',
+//     category: 'Car Rental'
+//   },
+//   {
+//     id: 'baleno-auto',
+//     type: 'cab',
+//     title: 'Baleno (Automatic)',
+//     description: 'Self drive car rental',
+//     pricePerKm: 0,
+//     baseFare: 1700,
+//     features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+//     image: 'https://i.pinimg.com/1200x/c9/ba/c3/c9bac3eb9a0a9c738de53051e495a08b.jpg',
+//     category: 'Car Rental'
+//   }
+// ];
 
-export const TAXI_PACKAGES: Package[] = [
-  {
-    id: 'taxi-outstation',
-    type: 'taxi',
-    title: 'Intercity One Way',
-    description: 'Safe and comfortable taxi for long-distance travel.',
-    pricePerKm: 10,
-    baseFare: 2000,
-    features: ['GPS Enabled', 'Newer Models', 'Expert Highway Drivers'],
-    image: 'https://picsum.photos/seed/taxi1/800/600',
-    category: 'Outstation'
-  },
-  {
-    id: 'taxi-business',
-    type: 'taxi',
-    title: 'Business Executive',
-    description: 'Premium sedans for corporate travel needs.',
-    pricePerKm: 18,
-    baseFare: 1200,
-    features: ['Luxury Sedan', 'Wi-Fi on board', 'Bottled water'],
-    image: 'https://picsum.photos/seed/taxi2/800/600',
-    category: 'Business'
-  }
-];
+// export const TAXI_PACKAGES: Package[] = [
+//   {
+//     id: 'baleno-taxi',
+//     type: 'taxi',
+//     title: 'Baleno Taxi',
+//     description: 'With driver city taxi service',
+//     pricePerKm: 0,
+//     baseFare: 2800,
+//     features: ['8 Hours', '80 KM', 'Driver Included'],
+//     image: 'https://i.pinimg.com/736x/a1/92/ae/a192ae47b0a1cbcc7974809a7d737918.jpg',
+//     category: 'Taxi Service'
+//   },
+//   {
+//     id: 'ertiga-taxi',
+//     type: 'taxi',
+//     title: 'Ertiga Taxi',
+//     description: 'With driver city taxi service',
+//     pricePerKm: 0,
+//     baseFare: 3500,
+//     features: ['8 Hours', '80 KM', 'Driver Included'],
+//     image: 'https://i.pinimg.com/1200x/19/ba/1a/19ba1a3eaef75a0106669bc1c7577ee5.jpg',
+//     category: 'Taxi Service'
+//   },
+//   {
+//     id: 'crysta-taxi',
+//     type: 'taxi',
+//     title: 'Innova Crysta Taxi',
+//     description: 'Premium taxi service',
+//     pricePerKm: 0,
+//     baseFare: 5000,
+//     features: ['8 Hours', '80 KM', 'Driver Included'],
+//     image: 'https://i.pinimg.com/736x/bb/56/11/bb56115d7a3a77cf886e7a8c9e82106b.jpg',
+//     category: 'Taxi Service'
+//   },
+//   {
+//     id: 'dzire-taxi',
+//     type: 'taxi',
+//     title: 'Swift Dzire Taxi',
+//     description: 'Budget-friendly taxi service',
+//     pricePerKm: 0,
+//     baseFare: 2600,
+//     features: ['8 Hours', '80 KM', 'Driver Included'],
+//     image: 'https://i.pinimg.com/736x/0b/ac/72/0bac72dc871f8c92d43a1913a1461aaf.jpg',
+//     category: 'Taxi Service'
+//   }
+// ];
 
 export const Icons = {
   Cab: () => (
@@ -85,3 +129,219 @@ export const Icons = {
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" /><path d="M7 7h.01" /></svg>
   )
 };
+
+
+
+export const TAXI_PACKAGES: Package[] = [
+  {
+    id: 'baleno-taxi',
+    type: 'taxi',
+    title: 'Baleno Taxi',
+    description: 'With driver city taxi service',
+    pricePerKm: 0,
+    baseFare: 2800,
+    features: ['8 Hours', '80 KM', 'Driver Included'],
+    image: 'https://i.pinimg.com/736x/a1/92/ae/a192ae47b0a1cbcc7974809a7d737918.jpg',
+    category: 'Taxi Service'
+  },
+  {
+    id: 'ertiga-taxi',
+    type: 'taxi',
+    title: 'Ertiga Taxi',
+    description: 'With driver city taxi service',
+    pricePerKm: 0,
+    baseFare: 3500,
+    features: ['8 Hours', '80 KM', 'Driver Included'],
+    image: 'https://i.pinimg.com/1200x/19/ba/1a/19ba1a3eaef75a0106669bc1c7577ee5.jpg',
+    category: 'Taxi Service'
+  },
+  {
+    id: 'crysta-taxi',
+    type: 'taxi',
+    title: 'Innova Crysta Taxi',
+    description: 'Premium city taxi service',
+    pricePerKm: 0,
+    baseFare: 5000,
+    features: ['8 Hours', '80 KM', 'Driver Included'],
+    image: 'https://i.pinimg.com/736x/bb/56/11/bb56115d7a3a77cf886e7a8c9e82106b.jpg',
+    category: 'Taxi Service'
+  },
+  {
+    id: 'dzire-taxi',
+    type: 'taxi',
+    title: 'Swift Dzire Taxi',
+    description: 'Budget-friendly city taxi service',
+    pricePerKm: 0,
+    baseFare: 2600,
+    features: ['8 Hours', '80 KM', 'Driver Included'],
+    image: 'https://i.pinimg.com/736x/0b/ac/72/0bac72dc871f8c92d43a1913a1461aaf.jpg',
+    category: 'Taxi Service'
+  }
+];
+export const CAB_PACKAGES: Package[] = [
+  {
+    id: 'creta-auto',
+    type: 'cab',
+    title: 'Creta (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 3000,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/50/66/0e/50660e2e46c306296a78717fb7231934.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'creta-manual',
+    type: 'cab',
+    title: 'Creta (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 2500,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/f3/45/d0/f345d0e0ee1dc77e7fb3eb9d367c9e77.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'baleno-manual',
+    type: 'cab',
+    title: 'Baleno (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1300,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/a1/92/ae/a192ae47b0a1cbcc7974809a7d737918.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'baleno-auto',
+    type: 'cab',
+    title: 'Baleno (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1700,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/66/c1/a2/66c1a24117004645a8c2e012afd5f051.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'swift-manual',
+    type: 'cab',
+    title: 'Swift (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1200,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/b6/4e/bd/b64ebdb90bf220aa9d988d5dc78f1e12.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'swift-auto',
+    type: 'cab',
+    title: 'Swift (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1500,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/30/c3/f1/30c3f1f2f6d7081a04d1c3f4843f8e69.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'i20-manual',
+    type: 'cab',
+    title: 'i20 (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1400,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/b9/dd/c6/b9ddc64a23583eda698fe7ab8bc85ca0.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'i20-auto',
+    type: 'cab',
+    title: 'i20 (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 1800,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/96/d4/7c/96d47c42315ee2f43a93b7c27f17bc4a.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'ertiga-manual',
+    type: 'cab',
+    title: 'Ertiga (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 2000,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/84/23/e0/8423e06a0bc4f9ba6a70d134afbf8c04.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'ertiga-auto',
+    type: 'cab',
+    title: 'Ertiga (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 2400,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/8e/77/f1/8e77f1515a70f8cafed72fac8336990a.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'crysta-manual',
+    type: 'cab',
+    title: 'Innova Crysta (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 2800,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/d5/b0/69/d5b069cb7ff31b6cc9261537ad5c4ecb.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'crysta-auto',
+    type: 'cab',
+    title: 'Innova Crysta (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 3500,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/ed/c4/36/edc436f5f59f1fd4eac5a7cfe884dd81.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'thar-manual',
+    type: 'cab',
+    title: 'Thar (Manual)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 2800,
+    features: ['Manual Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/29/2c/14/292c1409d5f612e6a196d3abe629f8b0.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'thar-auto',
+    type: 'cab',
+    title: 'Thar (Automatic)',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 3500,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/736x/b7/56/d5/b756d5d6e168684d9388b0cc4cb6382e.jpg',
+    category: 'Car Rental'
+  },
+  {
+    id: 'hycross',
+    type: 'cab',
+    title: 'Innova Hycross',
+    description: 'Self drive car rental',
+    pricePerKm: 0,
+    baseFare: 3500,
+    features: ['Automatic Transmission', 'Self Drive', 'Per Day Rental'],
+    image: 'https://i.pinimg.com/1200x/32/5d/12/325d12ace67d80391e6d4e9c9ce64a93.jpg',
+    category: 'Car Rental'
+  }
+];
