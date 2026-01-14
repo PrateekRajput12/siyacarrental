@@ -4,12 +4,13 @@ import { Icons, PHONE_NUMBER, WHATSAPP_NUMBER } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    // <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24 md:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1554672408-730436b60dde?auto=format&fit=crop&q=80&w=2000" 
-          alt="Luxury Cab" 
+        <img
+          src="https://images.unsplash.com/photo-1554672408-730436b60dde?auto=format&fit=crop&q=80&w=2000"
+          alt="Luxury Cab"
           className="w-full h-full object-cover scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
@@ -26,16 +27,16 @@ const Hero: React.FC = () => {
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl">
             Experience premium comfort and punctual arrivals. From city tours to outstation trips, we've got your journey covered.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
+            <a
               href={`tel:${PHONE_NUMBER}`}
               className="group bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-yellow-500/20 active:scale-95"
             >
               <Icons.Phone />
               Book via Call
             </a>
-            <a 
+            <a
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +63,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Down Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center pt-2">

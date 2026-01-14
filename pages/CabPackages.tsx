@@ -28,9 +28,12 @@ const CabPackages: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4">Need a Custom Package?</h2>
             <p className="text-black/80 font-medium">Talk to us for monthly subscriptions or corporate event fleet management.</p>
           </div>
-          <Link to="/contact">          <a href="" className="relative z-10 bg-black text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform shadow-xl">
+          <Link
+            to="/contact"
+            className="relative z-10 bg-black text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition-transform shadow-xl inline-block"
+          >
             Request Custom Quote
-          </a></Link>
+          </Link>
         </div>
       </div>
     </div>
